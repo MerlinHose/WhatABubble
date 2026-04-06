@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d2dbe29f-c5b0-4212-b251-6b3a69d3a8bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/bubbles.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/model.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/translation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/troubleshooting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/KeyBindings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/audio/AudioFormatProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/audio/MicrophoneCapture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/debug/DebugOverlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/ClientTickHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/PlayerJoinHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/RenderEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/gui/WhatABubbleSettingsScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/hud/LocalBubbleHud.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/network/ClientNetworkHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BillboardHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BubbleRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BubbleTextureManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/CameraStateHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/NineSliceRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/RenderUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/SpeechBubbleFeatureRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/speech/BubbleTranslationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/mixin/client/EntityRendererMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/BubbleLifetimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/BubbleStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/SpeechBubble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/SpeechBubbleManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/BubbleVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/ModConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/BubbleMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/BubbleOnlyMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/FullMuteMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/ModeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/ModeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/VoiceAndBubbleMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/NetworkHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/packet/ModeSyncPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/packet/SpeechPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/dummy/DummySpeechService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/vosk/VoskSpeechService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/util/ModLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/util/TextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/NoopVoiceChatIntegration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/VoiceChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/VoiceChatIntegration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/whatabubble/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/hoesl/source/intel/WhatABubble" value="3BxLPHcwtjq9TbDQAeF2cx1Wrsj" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="GPT-5.4" />
+      <entry key="agent-panel" value="GPT-5.4" />
+    </selectedModels>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WhatABubble" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WhatABubble" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WhatABubble" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3BxLPHcwtjq9TbDQAeF2cx1Wrsj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.WhatABubble [:net.fabricmc.devlaunchinjector.Main.main()].executor": "Debug",
+    "Gradle.WhatABubble [build].executor": "Run",
+    "Gradle.WhatABubble [clean].executor": "Run",
+    "Gradle.WhatABubble [runClient].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hoesl/source/intel/WhatABubble",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hoesl\source\intel\WhatABubble" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Client">
+    <configuration name="WhatABubble [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WhatABubble [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WhatABubble [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.WhatABubble [build]" />
+        <item itemvalue="Gradle.WhatABubble [clean]" />
+        <item itemvalue="Gradle.WhatABubble [runClient]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2dbe29f-c5b0-4212-b251-6b3a69d3a8bb" name="Changes" comment="" />
+      <created>1775425749584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775425749584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
