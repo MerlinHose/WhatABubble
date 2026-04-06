@@ -1,50 +1,82 @@
-# Troubleshooting
+# Hilfe bei Problemen
 
-## I cannot see my own bubble
+## Ich sehe meine eigene Sprechblase nicht
 
-- switch to **Third Person**
-- check the `Bubbles` setting
-- check whether you are currently sneaking
-- try enabling `Debug`
+Prüfe bitte diese Punkte:
 
-## Nothing is being recognized
+- Wechsle in die **Third-Person-Ansicht**, also in eine Sicht von außen auf deine Figur.
+- Prüfe die Einstellung `Bubbles`.
+- Achte darauf, ob deine Figur gerade schleicht.
+- Aktiviere testweise `Debug`, um eine Testblase anzuzeigen.
 
-- check the selected microphone
-- check whether a Vosk model is in the correct folder
-- re-enter the world so the model gets initialized
-- wait for the chat message that confirms the model is ready
+## Es wird gar nichts erkannt
 
-## The settings only update after refresh
+Dann sind oft diese Punkte die Ursache:
 
-Normally, `Save` should now apply settings immediately.
+- Das falsche Mikrofon ist ausgewählt.
+- Es liegt kein Vosk-Sprachmodell im richtigen Ordner.
+- Du hast noch keine Welt betreten.
+- Das Modell wurde noch nicht vollständig geladen.
 
-If something still looks outdated:
+Hilfreiche Schritte:
 
-- press `Refresh` in the settings menu
-- re-enter the world
-- check whether you edited the JSON file manually while the game was already running
+1. Prüfe dein ausgewähltes Mikrofon.
+2. Prüfe, ob ein Modell in `config/whatabubble/vosk-model` liegt.
+3. Betritt die Welt erneut.
+4. Warte auf die Chat-Hinweise, dass die Spracherkennung bereit ist.
 
-## Translation is not working
+## Meine Änderungen erscheinen erst nach `Refresh`
 
-- check `translateReceivedBubbles`
-- check whether `translationApiUrl` is correct
-- check whether your local LibreTranslate service is actually running
-- check the logs if `translationAutoStartLocalService` is enabled
-- if your local service just started, wait a little and try again
+Normalerweise sollte `Speichern` die Einstellungen direkt übernehmen.
 
-## My custom texture looks stretched incorrectly
+Wenn etwas trotzdem alt aussieht:
 
-- adjust `sliceBorders`
-- adjust `padding`
-- check whether your image is suitable for Nine-Slice rendering
+- drücke `Refresh`
+- betrete die Welt erneut
+- prüfe, ob du die JSON-Datei während des laufenden Spiels von Hand verändert hast
 
-## I do not have a Vosk model yet
+## Die Übersetzung funktioniert nicht
 
-Without a model, WhatABubble falls back to a dummy speech service.
+Prüfe diese Punkte:
 
-To enable real speech recognition:
+- Ist `translateReceivedBubbles` eingeschaltet?
+- Ist `translationApiUrl` korrekt?
+- Läuft dein lokaler Übersetzungsdienst wirklich?
+- Falls der automatische Start aktiv ist: Gibt es Hinweise in den Logs?
+- Wenn der Dienst gerade erst gestartet wurde: Kurz warten und erneut versuchen.
 
-1. download a Vosk model
-2. extract it into `config/whatabubble/vosk-model`
-3. enter a world again
+## Meine eigene Blasen-Grafik sieht verzerrt aus
 
+Dann helfen oft diese Schritte:
+
+- `sliceBorders` anpassen
+- `padding` anpassen
+- prüfen, ob die Grafik gut für diese Art der Skalierung geeignet ist
+
+Einfach erklärt:
+Wenn Ecken oder Ränder falsch festgelegt sind, wird das Bild beim Vergrößern unschön gedehnt.
+
+## Ich habe noch kein Sprachmodell
+
+Ohne Sprachmodell nutzt die Mod einen Ersatzdienst.
+Damit läuft das Projekt zwar weiter, aber echte Spracherkennung ist dann nicht möglich.
+
+So aktivierst du die echte Erkennung:
+
+1. Lade ein Vosk-Modell herunter.
+2. Entpacke es nach `config/whatabubble/vosk-model`.
+3. Betritt die Welt erneut.
+
+## Ich bin unsicher, ob die Anzeige grundsätzlich funktioniert
+
+Dann aktiviere `Debug` im Einstellungsfenster.
+
+Damit zeigt die Mod eine Testblase an.
+So kannst du schnell prüfen, ob das Anzeigen der Blasen grundsätzlich klappt.
+
+## Die Mod startet, aber es wirkt noch nicht fertig
+
+Das passt zum aktuellen Projektstand.
+`WhatABubble` ist noch in Entwicklung.
+
+Wenn also einzelne Funktionen noch unfertig wirken oder sich später ändern, ist das im Moment erwartbar.

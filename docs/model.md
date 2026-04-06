@@ -1,72 +1,115 @@
-# Vosk Model Setup
+# Sprachmodell einrichten
 
-## Default model path
+## Was ist ein Sprachmodell?
 
-By default, WhatABubble looks for a model here:
+Ein Sprachmodell ist vereinfacht gesagt ein Sprachpaket.
+Es hilft der Mod dabei, deine gesprochenen Wörter in geschriebenen Text umzuwandeln.
+
+Ohne ein solches Modell kann `WhatABubble` zwar starten, aber keine echte Spracherkennung durchführen.
+
+## Wo sucht die Mod nach dem Modell?
+
+Standardmäßig wird hier gesucht:
 
 ```text
 config/whatabubble/vosk-model
 ```
 
-It also supports language-specific folders:
+Zusätzlich unterstützt das Projekt auch sprachbezogene Ordner, zum Beispiel:
 
 ```text
 config/whatabubble/vosk-model-de
 config/whatabubble/vosk-model-en
 ```
 
-## Download a model
+Das bedeutet:
 
-You can find Vosk models here:
+- `de` steht zum Beispiel für Deutsch
+- `en` steht zum Beispiel für Englisch
+
+## Wo bekommt man ein Modell?
+
+Die Vosk-Modelle findest du hier:
 
 ```text
 https://alphacephei.com/vosk/models
 ```
 
-After downloading, copy the extracted model into the `config/whatabubble/vosk-model` folder.
+## So richtest du das Modell ein
 
-## Important behavior
+1. Lade ein passendes Modell herunter.
+2. Entpacke die heruntergeladene Datei.
+3. Kopiere den entpackten Modellordner in diesen Pfad:
 
-The mod only loads the speech model once you are actually inside a world or on a server.
+```text
+config/whatabubble/vosk-model
+```
 
-That means:
+Danach kann die Mod versuchen, das Modell beim Betreten einer Welt zu laden.
 
-- launching the game alone is not enough
-- enter a world or join a server
-- wait for the in-game chat messages that confirm the model state
+## Wichtiger Hinweis
 
-## Built-in speech hints
+Die Mod lädt das Sprachmodell erst dann, wenn du wirklich in einer Welt oder auf einem Server bist.
 
-The default hint list already contains common Minecraft terms and localized variants, for example:
+Das heißt konkret:
+
+- nur das Spiel zu starten reicht nicht
+- betrete eine Welt oder einen Server
+- warte auf die Hinweise im Spielchat
+
+## Was passiert, wenn kein Modell gefunden wird?
+
+Dann wechselt die Mod in einen Ersatzmodus.
+
+Das ist hilfreich, damit das Spiel nicht sofort scheitert.
+Aber echte Sprache-zu-Text-Erkennung funktioniert dann nicht.
+
+## Eingebaute Wort-Hilfen
+
+Damit typische Minecraft-Begriffe besser erkannt werden, bringt das Projekt bereits einige hilfreiche Wörter mit.
+
+Dazu gehören unter anderem:
 
 - Creeper
 - Zombie
-- Skeleton
+- Skelett
 - Enderman
-- Villager
+- Dorfbewohner
 - Redstone
 - Nether
 - Netherite
-- Diamond
+- Diamant
 - Obsidian
 - Piglin
 - Blaze
 - Ghast
 - Wither
-- Ender Dragon
+- Enderdrache
 
-## Add your own hints
+Diese Liste hilft der Erkennung besonders bei typischen Spielbegriffen.
 
-You can add extra terms in the JSON config:
+## Eigene Wörter hinzufügen
+
+Du kannst selbst weitere Begriffe ergänzen.
+Das ist nützlich, wenn auf deinem Server spezielle Namen, Orte oder Gegenstände oft vorkommen.
+
+Beispiel in der Konfigurationsdatei:
 
 ```json
-"additionalVoskHints": ["Warden", "Elytra", "Shulker"]
+{
+  "additionalVoskHints": ["Warden", "Elytra", "Shulker"]
+}
 ```
 
-This is useful for:
+Das kann helfen bei:
 
-- server-specific words
-- custom item names
-- mob names you use often
-- words Vosk does not recognize reliably yet
+- besonderen Server-Begriffen
+- eigenen Item-Namen
+- Namen von Kreaturen
+- Wörtern, die bisher nicht zuverlässig erkannt werden
 
+## Alltagstipp
+
+Wenn ein Wort immer wieder falsch erkannt wird, lohnt es sich oft, dieses Wort in die Zusatzliste einzutragen.
+
+Das ist ein bisschen so, als würde man einem Sprachassistenten vorher sagen, auf welche Wörter er besonders achten soll.

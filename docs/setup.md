@@ -1,93 +1,140 @@
-# Setup
+# Einrichtung und erste Schritte
 
-## Requirements
+## Was du brauchst
 
-- Minecraft with Fabric
-- the `WhatABubble` mod
-- for real speech recognition: a Vosk model
-- optional for translations: a LibreTranslate-compatible service
+Für den normalen Einsatz brauchst du:
 
-## Install the mod
+- Minecraft mit Fabric
+- die Mod `WhatABubble`
+- für echte Spracherkennung ein Vosk-Sprachmodell
+- optional für Übersetzungen einen passenden Übersetzungsdienst
 
-Place the mod in your `mods` folder as usual.
+## Schritt 1: Mod installieren
 
-## First launch
+Lege die Mod-Datei in deinen `mods`-Ordner.
 
-WhatABubble only initializes parts of the speech recognition system after you are inside a world or on a server.
+Das ist derselbe Ordner, in den man auch andere Fabric-Mods legt.
 
-When you enter a world, you may see chat messages such as:
+## Schritt 2: Sprachmodell vorbereiten
 
-- `Entered world. Preparing speech recognition...`
-- `Starting speech model...`
-- `Model found: vosk-model`
-- `Vosk model loaded. Speech recognition is ready.`
+Für echte Spracherkennung braucht die Mod ein Sprachmodell.
 
-If no model is found, you will also receive a message in-game.
+Ein Sprachmodell ist vereinfacht gesagt eine Sammlung von Sprachwissen.
+Sie hilft der Mod dabei, gesprochene Wörter als Text zu erkennen.
 
-## Open the settings menu
+Wie du das Modell einrichtest, steht genauer in [`model.md`](model.md).
 
-Default key:
+## Schritt 3: Spiel starten
+
+Starte Minecraft wie gewohnt.
+
+Wichtig:
+Die Spracherkennung wird nicht schon im Hauptmenü vollständig vorbereitet.
+Sie startet erst, wenn du wirklich eine Welt betrittst oder einem Server beitrittst.
+
+## Schritt 4: Eine Welt betreten
+
+Sobald du in einer Welt bist, beginnt die Mod mit der Vorbereitung.
+
+Im Chat können dabei Hinweise erscheinen, zum Beispiel:
+
+- Welt betreten
+- Sprachmodell wird gestartet
+- Modell gefunden
+- Spracherkennung ist bereit
+
+Wenn kein Modell gefunden wurde, informiert dich die Mod ebenfalls.
+
+## Schritt 5: Einstellungen öffnen
+
+Standardmäßig öffnest du das Einstellungsfenster mit dieser Taste:
 
 ```text
 B
 ```
 
-The menu contains:
+## Was du im Einstellungsfenster findest
 
-- `Microphone`
+Im Fenster gibt es diese wichtigsten Punkte:
+
+- `Mikrofon`
 - `Bubbles`
 - `Bubble RGB`
 - `Text RGB`
-- `Line wrapping`
+- `Zeilenumbruch`
 - `Debug`
-- `Save`
+- `Speichern`
 - `Refresh`
-- `Cancel`
+- `Abbrechen`
 
-## What the menu options do
+## Die Menüpunkte einfach erklärt
 
-### Microphone
+### Mikrofon
 
-Selects the input device for speech recognition.
+Hier wählst du aus, welches Mikrofon genutzt werden soll.
 
-- `Default (System)` uses the Windows default recording device
-- a device change only becomes active after pressing `Save`
+- `Standard (System)` benutzt das Standard-Mikrofon von Windows
+- eine Änderung wird erst nach `Speichern` übernommen
 
 ### Bubbles
 
-Defines which speech bubbles are visible:
+Hier legst du fest, welche Sprechblasen sichtbar sein sollen.
 
-- `Show all`
-- `Show all except my own`
-- `Show none`
+Möglich sind zum Beispiel:
+
+- alle Blasen anzeigen
+- alle außer der eigenen anzeigen
+- keine Blasen anzeigen
 
 ### Bubble RGB
 
-Changes the bubble background color.
+Damit änderst du die Farbe des Blasen-Hintergrunds.
 
-- range: `0-255`
+Die Zahlen reichen von `0` bis `255`.
+So werden Rot, Grün und Blau gemischt.
 
 ### Text RGB
 
-Changes the bubble text color.
+Damit bestimmst du die Farbe des Textes in der Blase.
 
-- range: `0-255`
+Auch hier gilt der Bereich `0` bis `255`.
 
-### Line wrapping
+### Zeilenumbruch
 
-Defines after how many characters the text wraps.
+Hier bestimmst du, wann ein längerer Satz in die nächste Zeile springt.
 
-- range: `10-100`
+So wird die Blase besser lesbar.
+Der erlaubte Bereich liegt zwischen `10` und `100`.
 
 ### Debug
 
-Shows a test bubble so you can quickly verify rendering, colors, and texture setup.
+Diese Funktion zeigt eine Testblase an.
+Das ist praktisch, wenn du schnell sehen möchtest, ob Farben und Darstellung stimmen.
 
-## Notes
+### Speichern
 
-- `Save` writes the values to the JSON file and applies them immediately
-- `Refresh` reloads the JSON file from disk
-- the microphone is only reloaded if it was actually changed
-- your own bubble is not rendered in First Person
-- bubbles are not shown while a player is sneaking
+Speichert deine Änderungen dauerhaft.
+Die Werte werden in die Konfigurationsdatei geschrieben und direkt angewendet.
 
+### Refresh
+
+Lädt die Konfigurationsdatei erneut von der Festplatte.
+
+Das ist nützlich, wenn du die Datei von Hand geändert hast und die neuen Werte übernehmen möchtest.
+
+### Abbrechen
+
+Schließt das Fenster, ohne neue Änderungen zu speichern.
+
+## Wichtige Hinweise für den Alltag
+
+- Deine eigene Sprechblase ist nur in der **Third-Person-Ansicht** sichtbar, also wenn du deine Figur von außen siehst.
+- In der Ego-Perspektive siehst du deine eigene Blase nicht.
+- Während eine Figur schleicht, werden Sprechblasen versteckt.
+- Das Mikrofon wird nur neu geladen, wenn sich die Auswahl wirklich geändert hat.
+
+## Wenn etwas nicht funktioniert
+
+Dann schau in [`troubleshooting.md`](troubleshooting.md).
+
+Dort findest du einfache Lösungen für häufige Probleme.

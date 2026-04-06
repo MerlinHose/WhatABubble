@@ -4,60 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2dbe29f-c5b0-4212-b251-6b3a69d3a8bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/bubbles.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/model.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/setup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/translation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/troubleshooting.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/KeyBindings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/audio/AudioFormatProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/audio/MicrophoneCapture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/debug/DebugOverlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/ClientTickHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/PlayerJoinHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/event/RenderEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/gui/WhatABubbleSettingsScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/hud/LocalBubbleHud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/network/ClientNetworkHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BillboardHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BubbleRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/BubbleTextureManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/CameraStateHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/NineSliceRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/RenderUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/render/SpeechBubbleFeatureRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/client/speech/BubbleTranslationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/java/de/mmerlin/mmxp/whatabubble/mixin/client/EntityRendererMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/BubbleLifetimeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/BubbleStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/SpeechBubble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/bubble/SpeechBubbleManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/BubbleVisibility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/ConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/config/ModConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/BubbleMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/BubbleOnlyMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/FullMuteMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/ModeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/ModeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/mode/VoiceAndBubbleMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/NetworkHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/packet/ModeSyncPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/network/packet/SpeechPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/SpeechServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/dummy/DummySpeechService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/speech/vosk/VoskSpeechService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/util/ModLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/util/TextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/NoopVoiceChatIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/VoiceChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/mmerlin/mmxp/whatabubble/voicechat/VoiceChatIntegration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/whatabubble/lang/en_us.json" afterDir="false" />
+    <list default="true" id="d2dbe29f-c5b0-4212-b251-6b3a69d3a8bb" name="Changes" comment="This push contains a larger update for WhatABubble covering rendering, config handling, translation, and documentation.&#10;&#10;Included changes:&#10;- improved speech bubble rendering and general bubble handling&#10;- own bubbles are only rendered in third person&#10;- bubbles are hidden while sneaking&#10;- Nine-Slice bubble rendering and custom bubble texture support extended&#10;- configurable bubble texture source, padding, and slice borders via JSON&#10;- settings now apply correctly on save and no longer require a manual refresh after joining a world&#10;- speech service initialization and reload flow improved&#10;- Vosk model loading now happens after entering a world/server and provides in-game status messages&#10;- added and improved Vosk hint handling for common Minecraft terms&#10;- received bubbles can be translated locally using LibreTranslate&#10;- improved local LibreTranslate startup/config handling&#10;- expanded configuration handling for microphone, colors, wrapping, debug mode, and translation&#10;- documentation was reworked and split into multiple English docs pages&#10;- README updated with a disclaimer that the project is still unfinished and used at your own risk&#10;&#10;Docs added/updated:&#10;- docs/index.md&#10;- docs/setup.md&#10;- docs/model.md&#10;- docs/bubbles.md&#10;- docs/translation.md&#10;- docs/troubleshooting.md&#10;- README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bubbles.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bubbles.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/model.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/model.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/setup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/translation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/translation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/troubleshooting.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +69,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MerlinHose&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MerlinHose/WhatABubble.git&quot;,
+    &quot;accountId&quot;: &quot;064de9e4-5b2c-4443-b667-78c85657864b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -126,32 +93,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.WhatABubble [:net.fabricmc.devlaunchinjector.Main.main()].executor": "Debug",
-    "Gradle.WhatABubble [build].executor": "Run",
-    "Gradle.WhatABubble [clean].executor": "Run",
-    "Gradle.WhatABubble [runClient].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hoesl/source/intel/WhatABubble",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.WhatABubble [:net.fabricmc.devlaunchinjector.Main.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.WhatABubble [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WhatABubble [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WhatABubble [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hoesl/source/intel/WhatABubble&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hoesl\source\intel\WhatABubble" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.WhatABubble [build]">
     <configuration name="WhatABubble [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -248,10 +215,23 @@
       <option name="presentableId" value="Default" />
       <updated>1775425749584</updated>
     </task>
+    <task id="LOCAL-00001" summary="This push contains a larger update for WhatABubble covering rendering, config handling, translation, and documentation.&#10;&#10;Included changes:&#10;- improved speech bubble rendering and general bubble handling&#10;- own bubbles are only rendered in third person&#10;- bubbles are hidden while sneaking&#10;- Nine-Slice bubble rendering and custom bubble texture support extended&#10;- configurable bubble texture source, padding, and slice borders via JSON&#10;- settings now apply correctly on save and no longer require a manual refresh after joining a world&#10;- speech service initialization and reload flow improved&#10;- Vosk model loading now happens after entering a world/server and provides in-game status messages&#10;- added and improved Vosk hint handling for common Minecraft terms&#10;- received bubbles can be translated locally using LibreTranslate&#10;- improved local LibreTranslate startup/config handling&#10;- expanded configuration handling for microphone, colors, wrapping, debug mode, and translation&#10;- documentation was reworked and split into multiple English docs pages&#10;- README updated with a disclaimer that the project is still unfinished and used at your own risk&#10;&#10;Docs added/updated:&#10;- docs/index.md&#10;- docs/setup.md&#10;- docs/model.md&#10;- docs/bubbles.md&#10;- docs/translation.md&#10;- docs/troubleshooting.md&#10;- README.md">
+      <option name="closed" value="true" />
+      <created>1775488430437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775488430437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This push contains a larger update for WhatABubble covering rendering, config handling, translation, and documentation.&#10;&#10;Included changes:&#10;- improved speech bubble rendering and general bubble handling&#10;- own bubbles are only rendered in third person&#10;- bubbles are hidden while sneaking&#10;- Nine-Slice bubble rendering and custom bubble texture support extended&#10;- configurable bubble texture source, padding, and slice borders via JSON&#10;- settings now apply correctly on save and no longer require a manual refresh after joining a world&#10;- speech service initialization and reload flow improved&#10;- Vosk model loading now happens after entering a world/server and provides in-game status messages&#10;- added and improved Vosk hint handling for common Minecraft terms&#10;- received bubbles can be translated locally using LibreTranslate&#10;- improved local LibreTranslate startup/config handling&#10;- expanded configuration handling for microphone, colors, wrapping, debug mode, and translation&#10;- documentation was reworked and split into multiple English docs pages&#10;- README updated with a disclaimer that the project is still unfinished and used at your own risk&#10;&#10;Docs added/updated:&#10;- docs/index.md&#10;- docs/setup.md&#10;- docs/model.md&#10;- docs/bubbles.md&#10;- docs/translation.md&#10;- docs/troubleshooting.md&#10;- README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="This push contains a larger update for WhatABubble covering rendering, config handling, translation, and documentation.&#10;&#10;Included changes:&#10;- improved speech bubble rendering and general bubble handling&#10;- own bubbles are only rendered in third person&#10;- bubbles are hidden while sneaking&#10;- Nine-Slice bubble rendering and custom bubble texture support extended&#10;- configurable bubble texture source, padding, and slice borders via JSON&#10;- settings now apply correctly on save and no longer require a manual refresh after joining a world&#10;- speech service initialization and reload flow improved&#10;- Vosk model loading now happens after entering a world/server and provides in-game status messages&#10;- added and improved Vosk hint handling for common Minecraft terms&#10;- received bubbles can be translated locally using LibreTranslate&#10;- improved local LibreTranslate startup/config handling&#10;- expanded configuration handling for microphone, colors, wrapping, debug mode, and translation&#10;- documentation was reworked and split into multiple English docs pages&#10;- README updated with a disclaimer that the project is still unfinished and used at your own risk&#10;&#10;Docs added/updated:&#10;- docs/index.md&#10;- docs/setup.md&#10;- docs/model.md&#10;- docs/bubbles.md&#10;- docs/translation.md&#10;- docs/troubleshooting.md&#10;- README.md" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

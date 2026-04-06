@@ -1,19 +1,32 @@
-# Translation
+# Übersetzung von Sprechblasen
 
-## What translation does
+## Was macht die Übersetzung?
 
-When enabled, your client can translate received bubbles from other players into your own language.
+Wenn die Übersetzung eingeschaltet ist, kann dein Spiel empfangene Sprechblasen anderer Personen in deine Sprache umwandeln.
 
-The transmitted bubble includes:
+Ein einfaches Beispiel:
 
-- the speaker's source language
-- the original message text
+- jemand spricht Englisch
+- du spielst auf Deutsch
+- dein Spiel zeigt dir die empfangene Blase auf Deutsch an
 
-Your client translates the received text locally into your selected language.
+Die ursprüngliche Nachricht enthält dabei unter anderem:
 
-The debug bubble can also be translated.
+- die Sprache des Sprechers
+- den originalen Text
 
-## JSON options
+Danach übersetzt dein Spiel die Nachricht in deine eingestellte Sprache.
+
+Auch die Testblase aus dem Debug-Modus kann übersetzt werden.
+
+## Wichtiger Hinweis
+
+Die Übersetzung betrifft nur empfangene Sprechblasen.
+Die eigene lokale Sprechblase der sprechenden Person bleibt davon unberührt.
+
+## Einstellungen in der Konfigurationsdatei
+
+Beispiel:
 
 ```json
 {
@@ -26,49 +39,66 @@ The debug bubble can also be translated.
 }
 ```
 
-## Meaning of the options
+## Die Werte einfach erklärt
 
-- `translateReceivedBubbles`: enables or disables translation
-- `translationApiUrl`: external or local LibreTranslate endpoint
-- `translationApiKey`: API key, if your service requires one
-- `translationLocalDir`: local folder for your own translation starter
-- `translationLocalStartScript`: startup file, for example `start.bat`
-- `translationAutoStartLocalService`: starts the local translator automatically when needed
+### `translateReceivedBubbles`
 
-If `translationApiUrl` is empty, this endpoint is used by default:
+Schaltet die Übersetzung ein oder aus.
 
-```text
-http://127.0.0.1:5000/translate
-```
+### `translationApiUrl`
 
-## Local LibreTranslate folder
+Hier steht die Adresse des Übersetzungsdienstes.
+Das kann ein lokaler Dienst auf deinem Rechner oder ein externer Dienst sein.
 
-Default folder:
+### `translationApiKey`
 
-```text
-config/whatabubble/libretranslate
-```
+Manche Dienste verlangen einen Schlüssel zur Nutzung.
+Falls dein Dienst so etwas braucht, kommt dieser Wert hier hinein.
 
-In a development run, this is often:
+### `translationLocalDir`
 
-```text
-run/config/whatabubble/libretranslate
-```
+Das ist der Ordner, in dem deine lokale Übersetzungslösung liegt.
 
-You can place your own starter there, for example:
+### `translationLocalStartScript`
+
+Das ist die Datei, mit der der lokale Übersetzungsdienst gestartet wird.
+
+Beispiele:
 
 - `start.bat`
 - `start.cmd`
 - `start.ps1`
 - `libretranslate.exe`
 
-The started service must provide a LibreTranslate-compatible endpoint:
+### `translationAutoStartLocalService`
+
+Wenn dieser Wert aktiv ist, versucht die Mod den lokalen Übersetzungsdienst bei Bedarf automatisch zu starten.
+
+## Standard-Adresse
+
+Wenn `translationApiUrl` leer bleibt, wird standardmäßig diese Adresse verwendet:
 
 ```text
 http://127.0.0.1:5000/translate
 ```
 
-## Example: local auto-start
+Das ist eine lokale Adresse auf deinem eigenen Rechner.
+
+## Standardordner für einen lokalen Übersetzer
+
+Normalerweise wird dieser Ordner verwendet:
+
+```text
+config/whatabubble/libretranslate
+```
+
+In einer Entwicklungsumgebung ist es oft dieser Pfad:
+
+```text
+run/config/whatabubble/libretranslate
+```
+
+## Beispiel: lokaler Autostart
 
 ```json
 {
@@ -80,9 +110,26 @@ http://127.0.0.1:5000/translate
 }
 ```
 
-## Notes
+## Was sollte der lokale Dienst können?
 
-- translation only affects received bubbles, not the original sender's local bubble
-- if your local service is slow to start, the first translations may fail until the service is ready
-- if your service requires a key, set `translationApiKey`
+Der gestartete Dienst muss mit `LibreTranslate` zusammenarbeiten können.
 
+Einfach gesagt:
+Er muss Anfragen annehmen können, die wie bei LibreTranslate aufgebaut sind.
+
+Die Mod erwartet dafür standardmäßig diese Adresse:
+
+```text
+http://127.0.0.1:5000/translate
+```
+
+## Typische Stolperstellen
+
+- Wenn der lokale Dienst langsam startet, kann die erste Übersetzung fehlschlagen.
+- Wenn die Adresse falsch ist, kommt keine Übersetzung zurück.
+- Wenn ein Schlüssel nötig ist, muss `translationApiKey` gesetzt sein.
+
+## Alltagserklärung
+
+Man kann sich diese Funktion wie eine kleine Dolmetscherin im Hintergrund vorstellen:
+Jemand sagt etwas, die Mod hört nicht neu zu, sondern nimmt den schon erkannten Text und lässt ihn zusätzlich übersetzen.
